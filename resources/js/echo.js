@@ -16,13 +16,3 @@ window.Echo = new Echo({
 /**
  * Testing Channels & Events & Connections
  */
-window.Echo.channel("dashboard").listen("UserSent", (event) => {
-    console.log("Usuario actualizado:", event.user);
-    // Aquí puedes actualizar el estado en React
-    // Por ejemplo, actualiza la lista de usuarios
-    setUsers((prevUsers) =>
-        prevUsers.map((user) =>
-            user.id === event.user.id ? { ...user, name: event.user.name } : user
-        )
-    );
-});
