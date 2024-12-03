@@ -1,0 +1,100 @@
+.notification-toast {
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: fadeIn 0.5s;
+}
+
+.notification-toast.info {
+    background: linear-gradient(135deg, #6bc5d2, #63a4ff);
+    color: white;
+}
+
+.notification-toast.success {
+    background: linear-gradient(135deg, #48c774, #32a852);
+    color: white;
+}
+
+.notification-toast.warning {
+    background: linear-gradient(135deg, #ffdd57, #ffbb33);
+    color: black;
+}
+
+.notification-toast.error {
+    background: linear-gradient(135deg, #ff6b6b, #f53e3e);
+    color: white;
+}
+
+.notification-header {
+    font-weight: bold;
+}
+
+.notification-body {
+    font-size: 0.9rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-btn {
+    color: white;
+}
+
+/* Asegura encapsulación para NotificationPush */
+.notification-toast {
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: notification-fadeIn 0.5s;
+}
+
+.notification-toast.info {
+    background: linear-gradient(135deg, #6bc5d2, #63a4ff);
+    color: white;
+}
+
+.notification-toast.success {
+    background: linear-gradient(135deg, #48c774, #32a852);
+    color: white;
+}
+
+.notification-toast.warning {
+    background: linear-gradient(135deg, #ffdd57, #ffbb33);
+    color: black;
+}
+
+.notification-toast.error {
+    background: linear-gradient(135deg, #ff6b6b, #f53e3e);
+    color: white;
+}
+
+.notification-header {
+    font-weight: bold;
+}
+
+.notification-body {
+    font-size: 0.9rem;
+}
+
+@keyframes notification-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close-btn {
+    color: white;
+}
